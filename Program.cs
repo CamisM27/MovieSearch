@@ -1,0 +1,3 @@
+﻿using SeleniumTest;
+
+SeleniumNavegator.NavegateToPage();

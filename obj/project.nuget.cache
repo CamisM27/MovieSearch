@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Uzl9Ln47qGg=",
+  "success": true,
+  "projectFilePath": "/home/camilla/Documentos/Desafios/SeleniumTest/SeleniumTest.csproj",
+  "expectedPackageFiles": [
+    "/home/camilla/.nuget/packages/selenium.webdriver/4.38.0/selenium.webdriver.4.38.0.nupkg.sha512"
+  ],
+  "logs": []
+}
