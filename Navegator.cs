@@ -15,9 +15,10 @@ public partial class SeleniumNavegator
         var options = new ChromeOptions();
         options.AddArguments("--incognito", "--start-maximized");
 
-        new ChromeDriver(options).Navigate().GoToUrl("https://www.imdb.com/pt/chart/top/");
+        ChromeDriver driver = new(options);
+        driver.Navigate().GoToUrl("https://www.imdb.com/pt/chart/top/");
 
-        WebDriverWait wait = new(new ChromeDriver(options), TimeSpan.FromSeconds(10));
+        WebDriverWait wait = new(driver, TimeSpan.FromSeconds(10));
 
         var principalTitule = wait.Until(d => d.FindElement(By.ClassName("chart-layout-specific-title-text"))).Text;
         var allMovies = wait.Until(d => d.FindElement(By.ClassName("sc-d24d5d37-0")));
